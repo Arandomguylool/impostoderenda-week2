@@ -7,7 +7,11 @@ import sys.io.File;
 #end
 import openfl.geom.Matrix;
 import openfl.display.BitmapData;
+#if (flixel >= "5.3.0")
+import flixel.sound.FlxSound;
+#else
 import flixel.system.FlxSound;
+#end
 import flixel.util.FlxAxes;
 import flixel.FlxSubState;
 import Options.Option;

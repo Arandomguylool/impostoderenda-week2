@@ -5,7 +5,11 @@ import flixel.FlxCamera;
 import flixel.math.FlxRect;
 import Song.SwagSong;
 import Section.SwagSection;
+#if (flixel >= "5.3.0")
+import flixel.sound.FlxSound;
+#else
 import flixel.system.FlxSound;
+#end
 import flixel.input.gamepad.FlxGamepad;
 import flixel.util.FlxAxes;
 import flixel.FlxSubState;
