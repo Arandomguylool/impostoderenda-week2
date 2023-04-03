@@ -267,8 +267,11 @@ class TitleState extends MusicBeatState
 			FlxG.fullscreen = !FlxG.fullscreen;
 		}
 
-		starFG.x -= 0.06;
-		starBG.x -= 0.02;
+		if (starFG != null && starBG != null)
+		{
+			starFG.x -= 0.06;
+			starBG.x -= 0.02;
+		}
 
 		var pressedEnter:Bool = controls.ACCEPT;
 
